@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Smokum&display=swap'); /*kaubojski font*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100&family=Smokum&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#holder{
+    margin: auto;
+    min-height: 970px;
+    max-width: 1920px;
+    background-image: url("images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center top; 
+    background-attachment: fixed;
+    background-size:cover;
+    /* padding-bottom: 8.1%; */
+}
+#small-nav{
+    display: none;
+}
+#nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.logo{
+    background-color: rgba(234, 237, 240, 0.794);
+}
+
+.logo img{
+    height: 200px;
+}
+.left-side{
+    display: flex;
+    list-style-type: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgba(51, 100, 45, 0.794);
+    padding-left:55px ;
+}
+.right-side{
+    display: flex;
+    list-style-type: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(155, 32, 32, 0.794);
+
+}
+ul li{
+    margin:35px 55px 0px 65px;
+    font-family: 'Smokum', cursive;
+    text-transform: uppercase;
+    font-size:xx-large ; 
+}
+ul li img{
+    height: 200px;
+    margin-top: -40px;
+}
+ul li a{
+    color: white;
+    text-decoration: none; 
+    letter-spacing: 0.2rem;
+}
+
+/*----------------------COVER CONTENT------------------------------------------*/
+#content-holder{
+    margin: 0 auto;
+    /* height: 550px; */
+    /* padding-bottom: 8%; */
+}
+#upper-box-holder{
+    /* width: 700px;
+    color: white;
+    word-spacing: 1em;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin:0 auto;
+    margin-top: 150px;
+    padding: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size:x-large ; */
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    position: relative;
+}
+#lower-box-holder{
+    display: flex;
+    justify-content: center;
+}
+/*--------------------upper box--------------------------*/
+.upper-box, .lower-box{
+    width:200px;
+    height: 200px;
+    border: 1px solid white ; 
+    transition: width 0.5s, height 0.5s, linear 0.5s;
+    border-radius: 100px;
+    position: relative;
+    
+}
+.upper-box:hover, .lower-box:hover{
+    border-radius:0px;
+}
+
+.upper-box text:hover{
+    border-radius:0px;
+}
+
+.upper-box img:hover, .lower-box img:hover{
+    border-radius:0px;
+}
+
+.upper-box img{
+    height: 100%;
+    width: 100%;
+    border-radius:100px;
+    transition: width 0.5s, height 0.5s, linear 0.5s;
+}
+.first-up{
+    background-image: url('images/burgers.jpg');
+    background-size: cover;
+}
+.black-low-opacity{
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 100%;
+    color:rgb(255, 255, 255);
+    border-radius:100px;
+    text-align: center;
+    transition: width 0.5s, height 0.5s, linear 0.5s;
+    visibility: hidden;
+}
+.black-low-opacity:hover{
+    border-radius:0px;
+}
+.black-low-opacity p{
+    padding-top: 35%;
+    font-family: 'Smokum', cursive;
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align:center;
+}
+.black-low-opacity p a{
+    text-decoration: none;
+    color: azure;
+}
+.second-up{
+    background-image: url('images/tacos.jpg');
+ 
+}
+.third-up{
+    background-image: url('images/quessadillas.jpg');
+
+}
+.fourth-up{
+    background-image: url('images/veges.jpg');
+
+}
+.first-up, .second-up, .third-up, .fourth-up{
+    background-size: cover;
+    background-position: center;
+}
+
+/*--------------------lower box--------------------------*/
+.lower-box img{
+    height: 100%;
+    width: 100%;
+    border-radius:100px;
+    transition: width 0.5s, height 0.5s, linear 0.5s;
+}
+.first-down{
+    background-image: url('images/macAndCheese.jpg');
+}
+.second-down{
+    background-image: url('images/nachosOne.jpg');
+}
+.third-down{
+    background-image: url('images/posters.jpg');
+}
+.fourth-down{
+    background-image: url('images/ensaladas.jpg');
+}
+.first-down, .second-down, .third-down, .fourth-down{
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*--------------------------CONTENT MENU TEXT------------------------*/
+
+
+/*---------------------premium meni---------------------*/
+#premium-menu{
+    width:800px ;
+    height:40px;
+    padding: 40px;
+    border-radius:5px ;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: width 1s, height 1s;
+    position: relative;
+    background-color: rgba(05, 0, 0, 0.8);
+    color: rgba(221, 190, 13, 0.89);
+    font-family: 'Smokum', cursive;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+#premium-menu:hover{
+    width:1000px;
+    height: 130px;
+}
+#premium-menu h2 a{
+    text-decoration: none;
+    color: rgba(221, 190, 13, 0.89);
+}
+#premium-food-holder{
+    list-style-type: none;
+    display: flex;
+    padding-top:30px ;
+    /* background-color: green; */
+}
+.premiumFood{
+    display: none;
+    width: 50%;
+    height: 100px;
+}
+.premiumFood a{
+    text-decoration: none; 
+    color: gold;
+}
+
+/*--------------------------------ABOUT US / O NAMA------------------------*/
+
+#location-map{
+    width: 100%;
+    height: 46.%;
+    /* border: 1px solid white; */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* background-color: red; */
+}
+/*-------------------------------------------------------------MENI-----------------------------------------------------------------------------*/
+#back-to-top{
+    height: 80px;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    bottom:0;
+}
+#back-to-top img{
+    height: 100%;
+}
+
+#menu-holder{
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    /* background-image: linear-gradient(to right, rgba(19, 75, 19, 0.801),rgba(253, 197, 197, 0.801), rgba(189, 8, 8, 0.801)); */
+    background-color: rgba(0, 0, 0, 0.65);
+    color:azure ;
+    padding-bottom: 3%;
+}
+#burgers-menu{
+    margin-top: 15%;
+    justify-content: center;
+    
+}
+
+#burgers-menu h2,#burgers-menu h2,#quessadillas-menu h2,
+#veges h2,#nachos-menu h2, #mac-and-cheese-menu h2,
+#tacos-menu h2,#posters-menu h2, #ensaladas-menu h2{
+    text-align: center;
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+#burgers-menu ul,#burgers-menu ul,#quessadillas-menu ul,#veges ul,
+#nachos-menu ul, #mac-and-cheese-menu ul,#tacos-menu ul, #posters-menu ul, #ensaladas-menu ul{
+    list-style-type: decimal;
+    letter-spacing: 1px;
+}
+#burgers-menu p,#quessadillas-menu p,#veges p,#nachos-menu p,
+#mac-and-cheese-menu p,#tacos-menu p, #posters-menu p, #ensaladas-menu p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+#mac-and-cheese-menu span,#nachos-menu span,#burgers-menu span,
+#quessadillas-menu span, #veges span, #tacos-menu span,
+ #premium span, #posters-menu span, #ensaladas-menu span{
+    float: right;
+}
+
+#premium h2{
+    padding-top:20px ;
+    text-align: center;
+    list-style-type:decimal;
+    letter-spacing: 1px;
+    font-style:normal;
+    font-size: 2rem;
+    color: rgba(235, 200, 1, 0.993);
+}
+#premium ul{
+    list-style-type: decimal;
+}
+#premium ul li{
+    color: rgba(235, 200, 1, 0.993);
+}
+#premium p{
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+/*--------------------------------------KONTAKT--------------------------------------*/
+
+#kontakt-holder{
+    width: 100%;
+    /* height: 740px; */
+    /* background-color: aqua; */
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+}
+.kontakt-form{
+    border-radius: 20px;
+    background-color: rgba(10, 10, 10, 0.739);
+    color: #fff;
+    width: 600px;
+    /* height: 600px; */
+    letter-spacing: 2px;
+    text-align: center;
+}
+.kontakt-form ul{
+    list-style-type: none;
+}
+.kontakt-form ul li{
+    text-decoration: none;
+}
+#ul-kontakt-form li:nth-child(3) a:hover {
+    color: rgb(194, 194, 43);
+}
+#ul-kontakt-form li:nth-child(4) a:hover {
+    color: rgb(35, 184, 230);
+}
+#ul-kontakt-form li:nth-child(5) a:hover {
+    color: rgb(35, 95, 190);
+}
+#ul-kontakt-form li:nth-child(6) a:hover {
+    color: rgb(127, 27, 158);
+}
+#ul-kontakt-form li:nth-child(7) a:hover {
+    color: rgb(35, 184, 230);
+}
+/*------------------------------------------MAIN MANU ON PHONE / RESPONSIVE----------------------------------*/
+
+@media only screen and (max-width: 1135px){
+    #holder{
+        padding-bottom: 10%;
+        height: auto;
+    }
+    #nav{
+        margin-left: 40px;
+    }
+    #nav ul li{
+        font-size: 30px;
+        margin: 30px 23px 0px 23px;;
+    }
+    .left-side{
+        padding-left:0px ;
+    }
+    #premium-menu:hover{
+        width:800px;
+        height: 130px;
+    }
+    #menu-holder{
+        margin-top: 15%;
+        padding-bottom: 15%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile devices: */
+    #holder{
+        margin: 0;
+        height:auto;
+        /* padding-bottom: 5%; */
+        /* padding-bottom: 5%; */
+        /* background-image: url('images/cover.jpg'); */
+        /* background-repeat: no-repeat;
+        background-position: center top; 
+        background-attachment: fixed; */
+        
+    }
+    #small-nav{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.657);
+    }
+    .small-meni{
+        position:absolute;
+        left: 0;
+        margin-top: 30px;
+        margin-left: 14%;
+        font-family: 'Smokum';
+        font-size:large;
+        letter-spacing: 3px;
+    }
+    .small-meni a{
+        text-decoration: none;
+        color: aliceblue;
+        text-transform: uppercase;
+    }
+    .small-kontakt{
+        position:absolute;
+        right: 0;
+        color: bisque;
+        margin-top: 30px;
+        margin-right: 5%;
+        font-family: 'Smokum';
+        font-size:large;
+        letter-spacing: 3px;
+    }
+    .small-kontakt a{
+        text-decoration: none;
+        color: aliceblue;
+        text-transform: uppercase;
+    }
+    /* .menu-button{
+        margin-top: 50px;
+        border: 0;
+        color: white;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        float: left;
+        position: absolute;
+        left: 0;
+    } */
+    /*-----------------------upper box-------------------*/
+    #content-holder{
+        /* background-color: blue; */
+        margin: auto;
+        padding: 0;
+        height: auto;
+        text-align: center;
+    }
+    #upper-box-holder{
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        margin-top: 120px;
+        width: 100%;
+    }
+    .upper-box{
+        margin: auto;
+        width: 200px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .first-up{
+        float: left;
+    }
+    .second-up{
+        float: right;
+    }
+    /*--------------------------lower box----------------*/
+    #lower-box-holder{
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        margin-top:20px;
+        width: 100%;
+    }
+    .lower-box{
+        margin: auto;
+        width: 200px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    /*-------------------PREMIUM MENU----------------------*/
+    #premium-menu{
+        width: 100%;
+        transition:none;
+        text-align: center;
+        margin:0;
+        padding: 40px 0px;
+    }
+    #premium-menu:hover{
+        width:100%;
+        height: 40px;
+        text-align: center;
+        border-radius: none;
+    }
+    #premium-food-holder{
+        display: none;
+    }
+
+    /*-------------------------------------------------*/
+    #back-to-top{
+        height: 35px;;
+    }
+    
+    .logo img{
+        height: 150px; 
+    }
+    .logo{
+        background-color: transparent;
+    }
+    #nav{
+        width: 100%;
+        background-color:white;
+        margin: auto;
+        padding: 0px;
+        display: none;
+    }
+    #nav ul{
+        display: none;
+    }
+    /*---------------------MENU-----------------------*/
+    #menu-holder{
+        margin: auto;
+        width: 100%;
+        /* background-image: linear-gradient(to right, rgba(26, 83, 26, 0.801), rgba(189, 8, 8, 0.801)); */
+        /* background-image: url('images/logo.png'); */
+        /* background-color: black; */
+        background-image: url('images/menu-picture.png');
+        background-size:cover;
+        color:white;
+        padding-top: 1px;
+        background-repeat: no-repeat;
+        background-position: center top; 
+        background-attachment: fixed;
+    }
+    #burgers-menu p,#quessadillas-menu p,#veges p,#nachos-menu p, #mac-and-cheese-menu p,#tacos-menu p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-style: italic;
+        font-weight: bolder;
+        color:white;
+        
+    }
+    #burgers-menu ul li,#burgers-menu ul li,#quessadillas-menu ul li,#veges ul li,#nachos-menu ul li, #mac-and-cheese-menu ul li,#tacos-menu ul li{
+        letter-spacing: 3px;
+    }
+    #premium p{
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-style: italic;
+    }
+    #premium ul li{
+        color: rgb(248, 248, 58);
+        letter-spacing: 2px;
+    }
+  }
