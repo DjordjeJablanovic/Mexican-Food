@@ -9,20 +9,22 @@
 
 #holder{
     margin: auto;
-    min-height: 970px;
     max-width: 1920px;
     background-image: url("images/cover.jpg");
     background-repeat: no-repeat;
     background-position: center top; 
     background-attachment: fixed;
-    background-size:cover;
+    background-size:auto;
     /* padding-bottom: 8.1%; */
+}
+.holderClass{
+    height: 100vh;
 }
 #small-nav{
     display: none;
 }
 #nav {
-    width: 100%;
+    /* width: 100%; */
     height: 100px;
     position: relative;
     display: flex;
@@ -366,12 +368,8 @@ ul li a{
 /*------------------------------------------MAIN MANU ON PHONE / RESPONSIVE----------------------------------*/
 
 @media only screen and (max-width: 1135px){
-    #holder{
-        padding-bottom: 10%;
-        height: auto;
-    }
     #nav{
-        margin-left: 40px;
+        margin-left: 75px;
     }
     #nav ul li{
         font-size: 30px;
@@ -387,6 +385,9 @@ ul li a{
     #menu-holder{
         margin-top: 15%;
         padding-bottom: 15%;
+    }
+    #lower-box-holder{
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -414,7 +415,7 @@ ul li a{
         position:absolute;
         left: 0;
         margin-top: 30px;
-        margin-left: 14%;
+        margin-left: 6%;
         font-family: 'Smokum';
         font-size:large;
         letter-spacing: 3px;
@@ -429,7 +430,7 @@ ul li a{
         right: 0;
         color: bisque;
         margin-top: 30px;
-        margin-right: 5%;
+        margin-right: 1%;
         font-family: 'Smokum';
         font-size:large;
         letter-spacing: 3px;
@@ -466,7 +467,6 @@ ul li a{
     }
     .upper-box{
         margin: auto;
-        width: 200px;
         margin-left: 0px;
         margin-bottom: 20px;
     }
@@ -475,6 +475,10 @@ ul li a{
     }
     .second-up{
         float: right;
+    }
+    .upper-box, .lower-box{
+        height: 150px;
+        width: 150px;
     }
     /*--------------------------lower box----------------*/
     #lower-box-holder{
@@ -485,7 +489,6 @@ ul li a{
     }
     .lower-box{
         margin: auto;
-        width: 200px;
         margin-left: 0px;
         margin-bottom: 10px;
     }
